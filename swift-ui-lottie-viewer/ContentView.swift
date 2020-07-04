@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var text = "hello world"
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack{
+            LottieView(filename: "rocket")
+
+        }
     }
 }
 

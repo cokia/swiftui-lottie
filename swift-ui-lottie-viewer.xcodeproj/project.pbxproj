@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,23 @@
 		A8EC1C0224B0CA7200CB81CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC1C0124B0CA7200CB81CC /* ContentView.swift */; };
 		A8EC1C0424B0CA7300CB81CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EC1C0324B0CA7300CB81CC /* Assets.xcassets */; };
 		A8EC1C0724B0CA7300CB81CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EC1C0624B0CA7300CB81CC /* Preview Assets.xcassets */; };
+		A8EC1C0F24B0CB1600CB81CC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC1C0E24B0CB1600CB81CC /* LottieView.swift */; };
+		A8EC1C1324B0CBDB00CB81CC /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = A8EC1C1224B0CBDB00CB81CC /* rocket.json */; };
+		F27750766FD0E0C97597C871 /* Pods_swift_ui_lottie_viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50580416600C25E3F3537718 /* Pods_swift_ui_lottie_viewer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1671CC37F37CC90413E58D /* Pods-swift-ui-lottie-viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-ui-lottie-viewer.release.xcconfig"; path = "Target Support Files/Pods-swift-ui-lottie-viewer/Pods-swift-ui-lottie-viewer.release.xcconfig"; sourceTree = "<group>"; };
+		2AA97D2C87F6A73A91492D0F /* Pods-swift-ui-lottie-viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-ui-lottie-viewer.debug.xcconfig"; path = "Target Support Files/Pods-swift-ui-lottie-viewer/Pods-swift-ui-lottie-viewer.debug.xcconfig"; sourceTree = "<group>"; };
+		50580416600C25E3F3537718 /* Pods_swift_ui_lottie_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_ui_lottie_viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EC1BFC24B0CA7200CB81CC /* swift-ui-lottie-viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-ui-lottie-viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EC1BFF24B0CA7200CB81CC /* swift_ui_lottie_viewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_ui_lottie_viewerApp.swift; sourceTree = "<group>"; };
 		A8EC1C0124B0CA7200CB81CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A8EC1C0324B0CA7300CB81CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8EC1C0624B0CA7300CB81CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8EC1C0824B0CA7300CB81CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EC1C0E24B0CB1600CB81CC /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		A8EC1C1224B0CBDB00CB81CC /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27750766FD0E0C97597C871 /* Pods_swift_ui_lottie_viewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B6C1C77466062149DC71F8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AA97D2C87F6A73A91492D0F /* Pods-swift-ui-lottie-viewer.debug.xcconfig */,
+				0F1671CC37F37CC90413E58D /* Pods-swift-ui-lottie-viewer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		966BDB48FF658B48B233C9CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50580416600C25E3F3537718 /* Pods_swift_ui_lottie_viewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8EC1BF324B0CA7200CB81CC = {
 			isa = PBXGroup;
 			children = (
 				A8EC1BFE24B0CA7200CB81CC /* swift-ui-lottie-viewer */,
 				A8EC1BFD24B0CA7200CB81CC /* Products */,
+				3B6C1C77466062149DC71F8F /* Pods */,
+				966BDB48FF658B48B233C9CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,10 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				A8EC1BFF24B0CA7200CB81CC /* swift_ui_lottie_viewerApp.swift */,
+				A8EC1C1224B0CBDB00CB81CC /* rocket.json */,
 				A8EC1C0124B0CA7200CB81CC /* ContentView.swift */,
 				A8EC1C0324B0CA7300CB81CC /* Assets.xcassets */,
 				A8EC1C0824B0CA7300CB81CC /* Info.plist */,
 				A8EC1C0524B0CA7300CB81CC /* Preview Content */,
+				A8EC1C0E24B0CB1600CB81CC /* LottieView.swift */,
 			);
 			path = "swift-ui-lottie-viewer";
 			sourceTree = "<group>";
@@ -76,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8EC1C0B24B0CA7300CB81CC /* Build configuration list for PBXNativeTarget "swift-ui-lottie-viewer" */;
 			buildPhases = (
+				0E5FEA9BFA0F068B2E377B0E /* [CP] Check Pods Manifest.lock */,
 				A8EC1BF824B0CA7200CB81CC /* Sources */,
 				A8EC1BF924B0CA7200CB81CC /* Frameworks */,
 				A8EC1BFA24B0CA7200CB81CC /* Resources */,
+				0694FD5B596262076B2F0D34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +160,53 @@
 			files = (
 				A8EC1C0724B0CA7300CB81CC /* Preview Assets.xcassets in Resources */,
 				A8EC1C0424B0CA7300CB81CC /* Assets.xcassets in Resources */,
+				A8EC1C1324B0CBDB00CB81CC /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0694FD5B596262076B2F0D34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swift-ui-lottie-viewer/Pods-swift-ui-lottie-viewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swift-ui-lottie-viewer/Pods-swift-ui-lottie-viewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swift-ui-lottie-viewer/Pods-swift-ui-lottie-viewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E5FEA9BFA0F068B2E377B0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swift-ui-lottie-viewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8EC1BF824B0CA7200CB81CC /* Sources */ = {
@@ -140,6 +215,7 @@
 			files = (
 				A8EC1C0224B0CA7200CB81CC /* ContentView.swift in Sources */,
 				A8EC1C0024B0CA7200CB81CC /* swift_ui_lottie_viewerApp.swift in Sources */,
+				A8EC1C0F24B0CB1600CB81CC /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +340,7 @@
 		};
 		A8EC1C0C24B0CA7300CB81CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA97D2C87F6A73A91492D0F /* Pods-swift-ui-lottie-viewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +363,7 @@
 		};
 		A8EC1C0D24B0CA7300CB81CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1671CC37F37CC90413E58D /* Pods-swift-ui-lottie-viewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

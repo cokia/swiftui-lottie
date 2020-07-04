@@ -1,0 +1,6 @@
+framework module Pods_swift_ui_lottie_viewer {
+  umbrella header "Pods-swift-ui-lottie-viewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
